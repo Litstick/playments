@@ -1,0 +1,22 @@
+<!--pages/sort/sort.wxml-->
+<view class='banner'>
+  
+</view>
+<view class='content'>
+  <view class='hot-panel'>
+      <view class='panel-body'>
+        <block wx:for="{{[0,1,2,3,4]}}">
+          <view class='row'>
+            <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix'></image>
+            <view class='info'>
+              <text class='tittle'>聚会主题趴名称</text>
+              <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+              <text class='more' bindtap='more'>了解>></text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+</view>
+<import src="../common/footer/footer.wxml"/>
+<template is="footer" data="{{route:'sort'}}"></template>

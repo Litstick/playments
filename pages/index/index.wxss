@@ -1,0 +1,487 @@
+.body{
+  background: #FFF;
+  padding-bottom: 80rpx;
+}
+.banner{
+  background-image: url('http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 400rpx;
+  position: relative;
+}
+input[type="text"] {
+  outline: none;
+  background: none;
+  border: 1rpx solid #CECECE;
+  padding: 20rpx 25rpx;
+  color: #999;
+  width: 90%;
+  margin: auto;
+}
+.banner-info{
+  width: 65%;
+  height: 120rpx;
+  position: absolute;
+  padding: 30rpx 25rpx;
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  bottom: 0rpx;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+.wow{
+  color: #FFF;
+}
+.wow::after{
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background: #FFF;
+}
+.slideInUp{
+  font-size: 1rem;
+  display: block;
+  line-height: 70rpx;
+}
+.slideInDown{
+  font-size: .8rem;
+  display: block;
+  line-height: 50rpx;
+}
+.down{
+  width: 150rpx;
+  height: 75rpx;
+  background-image: url('http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/down.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  margin-top: -13%;
+  margin-left: 40%;
+}
+.searchBox input{
+  margin-top: 20rpx;
+}
+.content{
+  padding: 20rpx 15rpx;
+}
+.row {
+  /*padding: 10rpx;*/
+  margin: 15rpx 0rpx;
+  /*border: 1rpx solid #CCC;*/
+}
+.recommend-panel .row{
+  border-bottom: 1rpx solid #CCC;
+}
+.row image{
+  width: 100%;
+  height: 250rpx;
+}
+.row-left, .row-right{
+  width: 48%;
+}
+.row-left{
+  display: inline-table;
+  margin-right: 4%;
+}
+.row-right{
+  display: inline-table;
+}
+.row-left image{
+  width: 100%;
+  height: 150rpx;
+}
+.row-right image{
+  width: 100%;
+  height: 150rpx;
+}
+.row-left .left-info{
+  width: 100%;
+}
+.row-right .right-info{
+  width: 100%;
+}
+.row-left .left-info .tittle{
+  font-size: .8rem;
+  display: block;
+}
+.row-right .right-info .tittle{
+  font-size: .8rem;
+  display: block;
+}
+.row-left .left-info .price{
+  font-size: .6rem;
+  width: 72%;
+  display: inline-table;
+}
+.row-right .right-info .price{
+  font-size: .6rem;
+  width: 72%;
+  display: inline-table;
+}
+.row-left .left-info .more{
+  font-size: .7rem;
+  color: #3c78d8;
+}
+.row-right .right-info .more{
+  font-size: .7rem;
+  color: #3c78d8;
+}
+.row-left .left-info .summary{
+  font-size: .7rem;
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  height: 70rpx;
+}
+.row-right .right-info .summary{
+  font-size: .7rem;
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  height: 70rpx;
+}
+.row .info{
+  margin-left: 10rpx;
+  display: inline-block;
+}
+.row .info text{
+  display: block;
+}
+.row .info .tittle{
+  line-height: 1.6rem;
+  width: 50%;
+  float: left;
+}
+.row .info .price{
+  font-size: .8rem;
+  line-height: 1.6rem;
+  margin-left: 75%;
+}
+.row .info .summary{
+  font-size: .8rem;
+  line-height: 1.2rem;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  height: 85rpx;
+}
+.row .info .more{
+  margin-left: 85%;
+  font-size: .7rem;
+  line-height: 1.2rem;
+  color: #3c78d8;
+}
+.top{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 1rem;
+  color: #FFF;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  background: #5bcdc5;
+  position: fixed;
+  bottom: 200rpx;
+  right: 50rpx;
+}
+.recommend-panel{
+  padding: 20rpx 15rpx;
+  border: 1rpx solid #CCC;
+}
+.recommend-panel .title{
+  float: left;
+  margin-right: 30rpx;
+}
+.recommend-panel .rec-time{
+  display: inline;
+  margin: 0rpx 5rpx;
+  padding: 0rpx 25rpx;
+  font-size: .8rem;
+  color: #4a86e8;
+}
+.view-more{
+  display: inline;
+  font-size: .8rem;
+  margin-left:50%;
+}
+.recommend-panel .active{
+  background: #4a86e8;
+  color: #FFF;
+}
+/********************热门样式*********************/
+.hot-panel{
+  margin-top: 20rpx;
+  padding: 20rpx 15rpx;
+  border: 1rpx solid #CCC;
+}
+.hot-panel .title{
+  float: left;
+  margin-right: 30rpx;
+}
+.hot-panel .hot-time{
+  display: inline;
+  margin: 0rpx 5rpx;
+  padding: 0rpx 25rpx;
+  font-size: .8rem;
+  color: #4a86e8;
+}
+.hot-panel .active{
+  background: #4a86e8;
+  color: #FFF;
+}
+.hot-panel .row{
+  border-bottom: 1rpx solid #ccc;
+}
+.hot-panel .row:last-child{
+  border-bottom: none;
+}
+.hot-panel .row image{
+  width: 35%;
+}
+.hot-panel .row .info{
+  width: 63%;
+}
+.hot-panel .row .info .tittle{
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hot-panel .row .info .summary{
+  height: 90rpx;
+}
+.hot-panel .row .info .price{
+  margin-left: 0rpx;
+  line-height: 1rem;
+  width: 78%;
+  display: inline-table;
+}
+.hot-panel .row .info .more{
+  margin-left: 0;
+  width: 22%;
+  display: inline-table;
+}
+/*******************最新样式********************/
+.new-panel{
+  margin-top: 20rpx;
+  padding: 20rpx 15rpx;
+  border: 1rpx solid #CCC;
+}
+.new-panel .title{
+  float: left;
+  margin-right: 30rpx;
+}
+.new-panel .new-time{
+  display: inline;
+  margin: 0rpx 5rpx;
+  padding: 0rpx 25rpx;
+  font-size: .8rem;
+  color: #4a86e8;
+}
+.new-panel .active{
+  background: #4a86e8;
+  color: #FFF;
+}
+.new-panel .row-left, .new-panel .row-right{
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #CCC;
+}
+
+/*******************周边样式***********************/
+.near-panel{
+  margin-top: 20rpx;
+  padding: 20rpx 15rpx;
+  border: 1rpx solid #CCC;
+  height: 530rpx;
+}
+.near-panel .title{
+  float: left;
+  margin-right: 30rpx;
+}
+.near-panel .view-more{
+  margin-left: 75%;
+}
+.near-left, .near-right{
+  width: 48%;
+  display: inline-table;
+}
+.near-left{
+  margin-right: 4%;
+  float: left;
+  clear: both;
+}
+.near-panel .panel-head{
+  margin-bottom: 20rpx;
+}
+.near-left image{
+  width: 100%;
+}
+.near-left-info .tittle{
+  font-size: .8rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250rpx;
+  white-space: nowrap;
+}
+.near-left-info .summary{
+  font-size: .7rem;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 80rpx;
+}
+.near-left-info .price{
+  width:71%;
+  font-size: .8rem;
+  display: inline-table;
+}
+.near-left-info .more{
+  font-size: .7rem;
+  color: #3c78d8;
+}
+.right-top{
+  height: 220rpx;
+  border-bottom: 1rpx solid #CCC;
+  margin-bottom: 8%;
+}
+.right-top image{
+  width: 40%;
+  float: left;
+  clear: both;
+  margin-right: 2%;
+}
+.right-top .tittle{
+  font-size: .7rem;
+  width: 180rpx;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.right-top .summary{
+  font-size: .6rem;
+  display: block;
+}
+.right-top .price{
+  width: 75%;
+  font-size: .6rem;
+  display: inline-table;
+}
+.right-top .more{
+  font-size: .6rem;
+  color: #3c78d8;
+}
+.right-bottom{
+  height: 220rpx;
+}
+.right-bottom image{
+  width: 40%;
+  float: left;
+  clear: both;
+  margin-right: 2%;
+}
+.right-bottom .tittle{
+  width: 180rpx;
+  font-size: .7rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.right-bottom .summary{
+  font-size: .6rem;
+  display: block;
+}
+.right-bottom .price{
+  width: 75%;
+  font-size: .6rem;
+  display: inline-table;
+}
+.right-bottom .more{
+  font-size: .6rem;
+  color: #3c78d8;
+}
+
+
+/*******footer样式********/
+.footer{
+  width: 100%;
+  height: 80rpx;
+  background: #FFF;
+  border-top: 3rpx solid #EEE;
+  position: fixed;
+  bottom: 0px;
+}
+.footer .nav{
+  font-size: .8rem;
+  float: left;
+  width: 20%;
+  line-height: 80rpx;
+  text-align: center;
+}
+.footer .active{
+  background: #5bcdc5;
+  color: #FFF;
+}
+.footer .nav .menu2{
+  display: none;
+  position: absolute;
+  width: 20%;
+  bottom: 90rpx;
+}
+.footer .nav:hover .menu2{
+  display: block;
+}
+.footer .nav .menu2 view{
+  width: 100%;
+  position: relative;
+  background: #5bcdc5;
+  text-align: center;
+  color: #FFF;
+}
+.footer .nav .menu2 view:first-child{
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.footer .nav .menu2 view:last-child{
+  font-size: .7rem;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  color: #eaeaea;
+}
+.footer .nav .menu2::after{
+  content: '';
+  border: 10rpx solid #5bcdc5;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  position: absolute;
+}
+.footer .nav .menu2 .active{
+  color: #4a86e8;
+}
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

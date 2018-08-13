@@ -1,0 +1,19 @@
+<!--pages/news/news.wxml-->
+<view class='body'>
+  <view class='content'>
+    <view class='row'>
+      <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix' align="left"></image>
+      <text class='tittle'>发现新事物</text>
+      <view class='summary'>概述：这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简</view>
+      <text class='more'>了解>></text>
+    </view>
+    <view class='row'>
+      <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix' align="left"></image>
+      <text class='tittle'>发现新事物发现新事物发现新事物</text>
+      <view class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介</view>
+      <text class='more'>了解>></text>
+    </view>
+  </view>
+</view>
+<import src="../common/footer/footer.wxml"/>
+<template is="footer" data="{{route:'news'}}"></template>

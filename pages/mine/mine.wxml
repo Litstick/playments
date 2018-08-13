@@ -1,0 +1,82 @@
+<!--pages/mine/mine.wxml-->
+<view class='body'>
+  <view class='header'>
+    <image class='head-icon'></image>
+    <view class='user-info'>
+      <text class='user-name'>用户名：admin</text>
+      <text class='user-id'>ID：000001</text>
+      <text class='bind-mobile'>>>绑定手机</text>
+    </view>
+  </view>
+  <view class='order-banner'>
+    <view class='panel-head'>
+      <text>我的订单</text>
+      <text class='view-all-order'>查看全部></text>
+    </view>
+    <view class='panel-body'>
+      <view>待付款</view>
+      <view>待发货</view>
+      <view>待收货</view>
+      <view>待评价</view>
+      <view>退款</view>
+    </view>
+  </view>
+
+  <view class='order-banner'>
+    <view class='panel-head'>
+      <text>我的订单</text>
+      <text class='view-all-order'>查看全部></text>
+    </view>
+    <view class='panel-body'>
+      <view>待付款</view>
+      <view>待发货</view>
+      <view>待收货</view>
+      <view>待评价</view>
+      <view>退款</view>
+    </view>
+  </view>
+
+  <view class='order-banner'>
+    <view class='panel-head'>
+      <text>我的订单</text>
+      <text class='view-all-order'>查看全部></text>
+    </view>
+    <view class='panel-body'>
+      <view>待付款</view>
+      <view>待发货</view>
+      <view>待收货</view>
+      <view>待评价</view>
+      <view>退款</view>
+    </view>
+  </view>
+
+  <view class='order-banner'>
+    <view class='panel-head'>
+      <text>我的订单</text>
+      <text class='view-all-order'>查看全部></text>
+    </view>
+    <view class='panel-body'>
+      <view>待付款</view>
+      <view>待发货</view>
+      <view>待收货</view>
+      <view>待评价</view>
+      <view>退款</view>
+    </view>
+  </view>
+
+  <view class='order-banner'>
+    <view class='panel-head'>
+      <text>我的订单</text>
+      <text class='view-all-order'>查看全部></text>
+    </view>
+    <view class='panel-body'>
+      <view>待付款</view>
+      <view>待发货</view>
+      <view>待收货</view>
+      <view>待评价</view>
+      <view>退款</view>
+    </view>
+  </view>
+</view>
+<import src="../common/footer/footer.wxml"/>
+<template is="footer" data="{{route:'mine'}}"></template>

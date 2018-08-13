@@ -1,0 +1,5 @@
+<!--pages/about/about.wxml-->
+<text>pages/about/about.wxml</text>
+
+<import src="../common/footer/footer.wxml"/>
+<template is="footer" data="{{route:'about'}}"></template>

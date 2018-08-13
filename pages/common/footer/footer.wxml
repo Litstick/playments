@@ -1,0 +1,16 @@
+<!--pages/common/footer/footer.wxml-->
+
+<template name="footer">
+  <view class="footer">
+    <view class="nav {{route == 'index'?'active':''}}" bindtap='routeTo' id='index'>{{route == 'index'?'home':'首页'}}</view>
+    <view class="nav {{route == 'sort'?'active':''}}">{{route == 'sort'?route:'分类'}}
+      <view class='menu2'>
+        <view class="{{route == 'sort'?'active':''}}" bindtap='routeTo' id='sort'>主题趴</view>
+        <view>开发中</view>
+      </view>
+    </view>
+    <view class="nav {{route == 'news'?'active':''}}" bindtap='routeTo' id='news'>{{route == 'news'?route:'发现'}}</view>
+    <view class="nav {{route == 'about'?'active':''}}" bindtap='routeTo' id="about">{{route == 'about'?route:'设计'}}</view>
+    <view class="nav {{route == 'mine'?'active':''}}" bindtap='routeTo' id="mine">{{route == 'mine'?route:'我的'}}</view>
+  </view>
+</template>

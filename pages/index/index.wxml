@@ -1,0 +1,174 @@
+<view class='body'>
+  <view class='banner'>
+    <view class='banner-info'>
+      <swiper interval='3000' autoplay='true'>
+        <swiper-item class="wow" bindtap='goAd'>
+          <text class='slideInUp'>世界那么大，我想去看看</text>
+          <text class='slideInDown'>世界那么大，我想去看看</text>
+        </swiper-item>
+        <swiper-item class="wow">
+          <text class='slideInUp'>一场说走就走的旅行</text>
+          <text class='slideInDown'>一场说走就走的旅行</text>
+        </swiper-item>
+        <swiper-item class="wow">
+          <text class='slideInUp'>旅游聚会，走起！</text>
+          <text class='slideInDown'>旅游聚会，走起！</text>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class='down'></view>
+  <view class='searchBox'>
+    <form>
+      <input type='text' placeholder='搜索：主题趴' required bindconfirm='search'></input>
+    </form>
+  </view>
+  <view class='content'>
+    <view class='recommend-panel'>
+      <view class='panel-head'>
+        <text class='title'>推荐</text>
+        <view class='rec-time {{recType[0]}}' bindtap='changeRecTime' data-genre="0">季</view>
+        <view class='rec-time {{recType[1]}}' bindtap='changeRecTime' data-genre="1">月</view>
+        <view class='view-more' >更多</view>
+      </view>
+      <view class='panel-body'>
+        <view class='row'>
+          <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' ></image>
+          <view class='info'>
+            <text class='tittle'>聚会主题趴名称</text>
+            <text class='price'>¥3000/10人</text>
+            <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+            <text class='more' bindtap='more'>了解>></text>
+          </view>
+        </view>
+        <view class='row-left'>
+          <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg'></image>
+          <view class='left-info'>
+            <text class='tittle'>聚会主题趴名称</text>
+            <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+            <view class='price'>¥1000/5人</view>
+            <text class='more'>了解>></text>
+          </view>
+        </view>
+        <view class='row-right'>
+          <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg'></image>
+          <view class='right-info'>
+            <text class='tittle'>聚会主题趴名称</text>
+            <text class='summary'>简介：这是简介这是简介这是简介这是简介...</text>
+            <view class='price'>¥10000/20人</view>
+            <text class='more'>了解>></text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='hot-panel'>
+      <view class='panel-head'>
+        <text class='title'>热门</text>
+        <view class='hot-time {{hotType[0]}}' bindtap='changeHotTime' data-genre="0">季</view>
+        <view class='hot-time {{hotType[1]}}' bindtap='changeHotTime' data-genre="1">月</view>
+        <view class='view-more' >更多</view>
+      </view>
+      <view class='panel-body'>
+        <block wx:for="{{[0,1,2,3,4]}}">
+          <view class='row'>
+            <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix'></image>
+            <view class='info'>
+              <text class='tittle'>聚会主题趴名称</text>
+              <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+              <text class='price'>¥1000/20人</text>
+              <text class='more' bindtap='more'>了解>></text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='new-panel'>
+      <view class='panel-head'>
+        <text class='title'>最新</text>
+        <view class='new-time {{newType[0]}}' bindtap='changeNewTime' data-genre="0">季</view>
+        <view class='new-time {{newType[1]}}' bindtap='changeNewTime' data-genre="1">月</view>
+        <view class='view-more' >更多</view>
+      </view>
+      <view class='panel-body'>
+        <block wx:for="{{[0,1,2]}}">
+          <view class='row-left'>
+            <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg'></image>
+            <view class='left-info'>
+              <text class='tittle'>聚会主题趴名称</text>
+              <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+              <view class='price'>¥1000/20人</view>
+              <text class='more'>了解>></text>
+            </view>
+          </view>
+          <view class='row-right'>
+            <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg'></image>
+            <view class='right-info'>
+              <text class='tittle'>聚会主题趴名称</text>
+              <text class='summary'>简介：这是简介这是简介这是简介这是简介...</text>
+              <view class='price'>¥1000/20人</view>
+              <text class='more'>了解>></text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='near-panel'>
+      <view class='panel-head'>
+        <text class='title'>周边</text>
+        <view class='view-more' >更多</view>
+      </view>
+      <view class='panel-body'>
+        <view class='near-left'>
+          <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix'></image>
+          <view class='near-left-info'>
+            <text class='tittle'>聚会主题趴名称1111111111111</text>
+            <text class='summary'>简介：这是简介这是简介这是简介这是简介...</text>
+            <view class='price'>¥1000/20人</view>
+            <text class='more'>了解>></text>
+          </view>
+        </view>
+        <view class='near-right'>
+          <view class='right-top'>
+            <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix' align="left"></image>
+            <text class='tittle'>聚会主题趴1111111111名称</text>
+            <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+            <view class='price'>¥1000/20人</view>
+            <text class='more'>了解>></text>
+          </view>
+          <view class='right-bottom'>
+            <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix' align="left"></image>
+            <text class='tittle'>聚会主题趴名称</text>
+            <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+            <view class='price'>¥1000/20人</view>
+            <text class='more'>了解>></text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- <block wx:for="{{[0,1,2,3,4,5,6,7,8,9]}}" wx:key="content-list">
+      <view class='row'>
+        <image src='http://demo.cssmoban.com/cssthemes4/cpts_979_byu/images/my7.jpg' mode='widthFix'></image>
+        <view class='info'>
+          <text class='tittle'>聚会主题趴名称</text>
+          <text class='summary'>简介：这是简介这是简介这是简介这是简介这是简介这是简介...</text>
+          <text class='more' bindtap='more'>了解>></text>
+        </view>
+      </view>
+    </block> -->
+  </view>
+</view>
+<view class='top' bindtap='toTop'>Top</view>
+<import src="../common/footer/footer.wxml"/>
+<template is="footer" data="{{route:'index'}}"></template>
+<!-- <view class="container">
+  <view class="userinfo">
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> 
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>  
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>  -->

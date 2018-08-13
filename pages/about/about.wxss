@@ -1,0 +1,58 @@
+/* pages/about/about.wxss */
+
+/*******footer样式********/
+.footer{
+  width: 100%;
+  height: 80rpx;
+  background: #FFF;
+  border-top: 3rpx solid #EEE;
+  position: fixed;
+  bottom: 0px;
+}
+.footer .nav{
+  font-size: .8rem;
+  float: left;
+  width: 20%;
+  line-height: 80rpx;
+  text-align: center;
+}
+.footer .active{
+  background: #5bcdc5;
+  color: #FFF;
+}
+.footer .nav .menu2{
+  display: none;
+  position: absolute;
+  width: 20%;
+  bottom: 90rpx;
+}
+.footer .nav:hover .menu2{
+  display: block;
+}
+.footer .nav .menu2 view{
+  width: 100%;
+  position: relative;
+  background: #5bcdc5;
+  text-align: center;
+  color: #FFF;
+}
+.footer .nav .menu2 view:first-child{
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.footer .nav .menu2 view:last-child{
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  color: #eaeaea;
+}
+.footer .nav .menu2::after{
+  content: '';
+  border: 10rpx solid #5bcdc5;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  position: absolute;
+}
+.footer .nav .menu2 .active{
+  color: #4a86e8;
+}

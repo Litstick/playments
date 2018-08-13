@@ -1,0 +1,102 @@
+/* pages/news/news.wxss */
+.body{
+  background: #FFF;
+  padding-bottom: 80rpx;
+}
+.content{
+  padding: 20rpx 15rpx;
+}
+.row{
+  margin-top: 20rpx;
+  padding: 20rpx 15rpx;
+  border: 1rpx solid #CCC;
+  height: 400rpx;
+  position: relative;
+}
+.row image{
+  width: 40%;
+  float: left;
+  clear: both;
+  margin-right: 2%;
+}
+.row .tittle{
+  width: auto;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.row .tittle::before{
+  content: '《';
+}
+.row .tittle::after{
+  content: '》';
+}
+.row .summary::after{
+  content: '...';
+}
+.row .more{
+  color: #3c78d8;
+  position: absolute;
+  right: 6%;
+  bottom: 5%;
+}
+
+
+/*******footer样式********/
+.footer{
+  width: 100%;
+  height: 80rpx;
+  background: #FFF;
+  border-top: 3rpx solid #EEE;
+  position: fixed;
+  bottom: 0px;
+}
+.footer .nav{
+  font-size: .8rem;
+  float: left;
+  width: 20%;
+  line-height: 80rpx;
+  text-align: center;
+}
+.footer .active{
+  background: #5bcdc5;
+  color: #FFF;
+}
+.footer .nav .menu2{
+  display: none;
+  position: absolute;
+  width: 20%;
+  bottom: 90rpx;
+}
+.footer .nav:hover .menu2{
+  display: block;
+}
+.footer .nav .menu2 view{
+  width: 100%;
+  position: relative;
+  background: #5bcdc5;
+  text-align: center;
+  color: #FFF;
+}
+.footer .nav .menu2 view:first-child{
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.footer .nav .menu2 view:last-child{
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  color: #eaeaea;
+}
+.footer .nav .menu2::after{
+  content: '';
+  border: 10rpx solid #5bcdc5;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  position: absolute;
+}
+.footer .nav .menu2 .active{
+  color: #4a86e8;
+}

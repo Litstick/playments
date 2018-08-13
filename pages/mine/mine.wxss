@@ -1,0 +1,114 @@
+/* pages/mine/mine.wxss */
+/*******header样式********/
+.body{
+  background: #ECECEC;
+  padding-bottom: 80rpx;
+}
+.header{
+  height: 270rpx;
+  background: #5bcdc5;
+}
+.head-icon{
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 75rpx;
+  margin-left: 45rpx;
+  background: #FFF;
+  border-radius: 75rpx;
+  float: left;
+}
+.user-info{
+  padding-top: 120rpx;
+  padding-left: 225rpx;
+}
+.user-info text{
+  color: #FFF;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  display: block;
+}
+.user-info text:last-child{
+  float: right;
+  margin-right: 50rpx;
+  font-size: .8rem;
+}
+.order-banner{
+  width: 94%;
+  height: 150rpx;
+  padding: 1% 3%;
+  margin-top: 20rpx;
+  background: #FFF;
+}
+.order-banner .panel-head{
+  border-bottom: 1rpx solid #CCC;
+}
+.order-banner .panel-head text{
+  line-height: 2rem;
+}
+.order-banner .view-all-order{
+  float: right;
+}
+.order-banner .panel-body view{
+  float: left;
+  font-size: .8rem;
+  line-height: 2rem;
+  width: 20%;
+  text-align: center;
+}
+
+/*******footer样式********/
+.footer{
+  width: 100%;
+  height: 80rpx;
+  background: #FFF;
+  border-top: 3rpx solid #EEE;
+  position: fixed;
+  bottom: 0px;
+}
+.footer .nav{
+  font-size: .8rem;
+  float: left;
+  width: 20%;
+  line-height: 80rpx;
+  text-align: center;
+}
+.footer .active{
+  background: #5bcdc5;
+  color: #FFF;
+}
+.footer .nav .menu2{
+  display: none;
+  position: absolute;
+  width: 20%;
+  bottom: 90rpx;
+}
+.footer .nav:hover .menu2{
+  display: block;
+}
+.footer .nav .menu2 view{
+  width: 100%;
+  position: relative;
+  background: #5bcdc5;
+  text-align: center;
+  color: #FFF;
+}
+.footer .nav .menu2 view:first-child{
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.footer .nav .menu2 view:last-child{
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  color: #eaeaea;
+}
+.footer .nav .menu2::after{
+  content: '';
+  border: 10rpx solid #5bcdc5;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  position: absolute;
+}
+.footer .nav .menu2 .active{
+  color: #4a86e8;
+}

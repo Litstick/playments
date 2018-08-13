@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sort/sort",
+    "pages/news/news",
+    "pages/about/about",
+    "pages/mine/mine",
+    "pages/common/footer/footer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "PLAY盟",
+    "navigationBarTextStyle": "black"
+  }
+}
